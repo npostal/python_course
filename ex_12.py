@@ -15,3 +15,17 @@
 # диапазоне от –50 до 50
 
 
+num_day = int(input('Введите колличество дней: '))
+
+max_count = 0
+temp_count = 0
+
+for _ in range(num_day):
+    temperature = int(input('Введите температуру: '))
+    if temperature >= 0:
+        temp_count += 1
+    else:
+        temp_count = 0
+    if temp_count > max_count:
+        max_count = temp_count
+print(max_count)
