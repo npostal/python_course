@@ -8,3 +8,12 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
+n = int(input("Введите первый размер:"))
+m = int(input("Введите второй размер:"))
+
+k = int(input("Введите количество долек:"))
+
+if k < m * n and (k % m == 0 or k % n == 0):
+    print(f"{n, m, k} -> Yes")
+else:
+    print(f"{n, m, k} -> No")
